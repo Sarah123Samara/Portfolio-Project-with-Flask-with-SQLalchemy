@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+        <section class="header">
+            <h1>Sarah Samara</h1>
+            <p>Coding isn't just a job; it's my daily rendezvous with creativity,
+                 where every line written is a step into a world of endless solutions.</p>
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg" alt="Headshot of myself" >
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+
+                Hey, I'm Sarah, a curious soul diving into the world of code.
+                 Life's an adventure, and coding adds a thrilling twist.
+                  If you're curious to learn more about my journey, swing by the about page.
+            </p>
+            <div id="triangle1"></div>
+            <div id="triangle2"></div>
+        </section>
+        <section id="skills">
+            <i class="fas fa-laptop-code"></i>
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>SQLAlchemy</li>
+                <li>GitHub</li>
+                <li>Visual Studio Code</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <i class="fas fa-file-code"></i>
+            <h2>Projects</h2>
+            <div id="project-list">
+                {% for project in projects %}
+                    <div class="a-project">
+                        <h3><a href="{{ url_for('project_detail', id=project.id) }}" >{{ project.title }}</a></h3>
+                        <p>{{ project.description }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section id="contact">
+            <i class="fas fa-paper-plane"></i>
+            <h2>Contact Me</h2>
+            <p>
+                
+                For business inquiries or project proposals, you can reach out to me on
+                 my email. If you have a specific task or project in mind that requires my skills,
+                  please provide relevant details, and I'll get back to you promptly to discuss how
+                   we can collaborate effectively. Looking forward to the possibility of working
+                    together on impactful projects.
+            </p>
+            <p>
+                <i class="fas fa-envelope"></i>
+                my_email@email.com
+            </p>
+        </section>
+{%endblock%}

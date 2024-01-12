@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+        <section class="header">
+            <h1>Sarah Samara</h1>
+            <p>I'm honing my skills in Web development, striving to create efficient solutions for complex problems.</p>
+            <img src="https://cdn.pixabay.com/photo/2020/09/04/12/32/kayak-5543935_1280.jpg" alt="Headshot of myself">
+        </section>
+        <section id="about-page">
+            <div id="triangle7"></div>
+            <div id="triangle8"></div>
+            <h2>Section Title</h2>
+            <p>
+                Hey, I'm Sarah – a young explorer with a heart full of curiosity and eyes
+                 that light up with wonder. Life, to me, is this incredible journey filled
+                  with endless possibilities. Whether I'm immersed in the pages of a
+                   captivating story or chasing butterflies in a sun-kissed meadow,
+                    every moment holds the promise of discovery. With a skip
+                     in my step and enthusiasm as my compass, I navigate through
+                      the world, always eager for the next adventure. My days are
+                       like an open book, waiting to be filled with new and exciting chapters.
+            </p>
+            <p>
+
+                Recently, I've embarked on a thrilling journey into the world of coding,
+                 a path illuminated with the glow of endless possibilities and the hum of 
+                algorithms waiting to be unraveled. Armed with a determination
+                 to conquer the intricate dance of syntax and logic, I've set out on this coding
+                  adventure with the same wide-eyed
+                 wonder that defines my approach to life. It's not just about mastering languages;
+                  it's about cultivating a mindset that thrives
+                  on problem-solving and creativity. Each line of code is a step closer to unveiling
+                   the magic of software development. As I navigate through this digital landscape,
+                    I'm excited to see how these newfound coding skills will shape not only my 
+                projects but also the way I approach challenges in the broader canvas of life.
+            </p>
+            <a href="{{ url_for('homepage') }}"><i class="far fa-file"></i>Portfolio</a>
+        </section>
+{%endblock%}
